@@ -1,5 +1,5 @@
 Feature: US1007 PositiveLoginTest
-  @wip
+
   Scenario: TC10 Positive login test with valid username and valid password
 
     Given user goes to "qdUrl" homepage
@@ -8,6 +8,7 @@ Feature: US1007 PositiveLoginTest
     And user enters a password to passwordTextBox
     And user click on loginPage login button
     And test that user could be able to login
+    And closes the page
 
 
 

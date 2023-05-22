@@ -122,4 +122,18 @@ public class AmazonStepDefinitions {
 
 
     }
+
+    @Then("searches for {string} in amazon searchBox")
+    public void searches_for_in_amazon_search_box(String wordToSend) {
+        amazonPage.amazonSearchBox.sendKeys(wordToSend);
+    }
+
+    @Then("tests that result text contains {string} words")
+    public void tests_that_result_text_contains_words(String expectedWord) {
+        String actualResultText = amazonPage.amazonResultTextBox.getText();
+
+        Assert.assertTrue(actualResultText.contains(expectedWord));
+
+    }
+
 }

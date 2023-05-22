@@ -13,7 +13,7 @@ public class QdPage {
     }
 
     @FindBy(xpath = "//a[text()='Log in']")
-    public WebElement wdLoginButton;
+    public WebElement qdLoginButton;
 
     @FindBy(xpath = "//a[text()='My courses']")
     public WebElement userHomePageMyCoursesButton;
@@ -26,5 +26,7 @@ public class QdPage {
 
     @FindBy(xpath = "//button[@class='btn red radius-5 mt-4 w-100']")
     public WebElement loginPageLoginButton;
+
+
 
 }
