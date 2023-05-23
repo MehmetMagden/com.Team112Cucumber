@@ -1,7 +1,7 @@
 @US1011
 Feature: US1011 Creating Users
 
-  @wip
+
   Scenario Outline: TC16 Creating a lot of users in editor page
 
     Given user goes to "editorUrl" homepage
@@ -17,6 +17,7 @@ Feature: US1011 Creating Users
     And user sends the "<firstName>" to search box
     Then tests that user's "<firstName>" is in the list
     Then closes the page
+
 
 
     Examples:
