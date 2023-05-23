@@ -1,5 +1,5 @@
 
-Feature: How to use Configuration Properties File
+Feature: US1006 How to use Configuration Properties File
 
 #  To reach any value from configuration.properties file we need to use parameters.Scenario:
 #  Then in the method we use that parameter to get the value from configuration.properties file

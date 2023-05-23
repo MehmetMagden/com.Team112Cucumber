@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.QdPage;
@@ -57,6 +58,29 @@ public class QdStepDefinitions {
     }
 
 
+    @And("user enters {string} on loginpage email text box")
+    public void userEntersOnLoginpageEmailTextBox(String email) {
+
+        qdPage.loginPageEmailTextBox.sendKeys(email);
 
 
+    }
+
+    @Then("user enters {string} on loginpage password text box")
+    public void user_enters_on_loginpage_password_text_box(String password) {
+
+        qdPage.loginPagePasswordTextBox.sendKeys(password);
+
+    }
+
+    @And("waitFor {int} seconds")
+    public void waitforSeconds(int second) {
+
+        try {
+            Thread.sleep(second*1000);
+        } catch (InterruptedException e) {
+
+        }
+
+    }
 }
