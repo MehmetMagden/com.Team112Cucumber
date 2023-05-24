@@ -2,6 +2,7 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.After;
 import org.junit.Assert;
 import pages.WebDriverPage;
 import utilities.Driver;
@@ -70,13 +71,23 @@ public class WebDriverStepDefinitions {
     @Then("Close the Popup by saying Ok")
     public void close_the_popup_by_saying_ok() {
 
+        Driver.getDriver().switchTo().alert().accept();
     }
     @Then("Go back to the first page")
     public void go_back_to_the_first_page() {
 
+        Driver.getDriver().switchTo().window(firstPageHandleValue);
     }
     @Then("Test that user is in the first page")
     public void test_that_user_is_in_the_first_page() {
 
+        String actualTitle = Driver.getDriver().getTitle();
+        String expectedTitle = "WebDriverUniversity.com";
+        System.out.println(actualTitle);
+
+        Assert.assertTrue(actualTitle.contains(expectedTitle));
+
     }
+
+
 }

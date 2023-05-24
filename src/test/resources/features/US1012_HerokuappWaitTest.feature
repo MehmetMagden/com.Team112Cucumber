@@ -1,5 +1,5 @@
 Feature: US1012 Website Wait Test
-
+  @wip
   Scenario: TC17 User should wait to see buttons
 
     Given user goes to "herOkuAppUrl" homepage
