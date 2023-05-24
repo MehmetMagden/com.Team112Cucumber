@@ -1,5 +1,5 @@
 Feature: US1012 Website Wait Test
-  @wip
+
   Scenario: TC17 User should wait to see buttons
 
     Given user goes to "herOkuAppUrl" homepage
@@ -8,3 +8,4 @@ Feature: US1012 Website Wait Test
     Then tests that delete button is visible
     And deletes delete button by clicking delete button
     Then tests that delete button is not visible
+    And closes the page

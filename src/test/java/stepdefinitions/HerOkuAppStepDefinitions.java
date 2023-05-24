@@ -18,9 +18,9 @@ public class HerOkuAppStepDefinitions {
     }
     @Then("user waits until delete button appears")
     public void user_waits_until_delete_button_appears() {
-       // Thread.sleep(3000);  this is called hard wait
+       // Thread.sleep(400000);  this is called hard wait
 
-        ReusableMethods.waitForVisibility(By.xpath("//button[text()='Delete']"),4);
+        ReusableMethods.waitForVisibility(By.xpath("//button[text()='Delete']"),400);
 
     }
     @Then("tests that delete button is visible")
