@@ -1,4 +1,4 @@
-
+@p2
 Feature: US1009 To test more than one data, use Scenario Outline
 
   Scenario Outline: TC14 amazon Search Test

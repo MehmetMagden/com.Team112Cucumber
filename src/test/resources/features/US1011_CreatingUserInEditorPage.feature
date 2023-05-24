@@ -1,4 +1,4 @@
-@US1011
+@US1011 @p1
 Feature: US1011 Creating Users
 
 

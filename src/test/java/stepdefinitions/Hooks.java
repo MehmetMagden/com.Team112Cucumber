@@ -1,19 +1,21 @@
 package stepdefinitions;
 
-import org.junit.After;
-
+import io.cucumber.java.After;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 public class Hooks {
 
-
     @After
-    public void tearDown(){
+    public void tearDown(Scenario scenario){
 
-        System.out.println("page will be closed in 2 sec");
-        ReusableMethods.wait(2);
+        final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+        if (scenario.isFailed()) {
+            scenario.attach(screenshot, "image/png","screenshots");
+        }
         Driver.closeDriver();
-
     }
+
 }

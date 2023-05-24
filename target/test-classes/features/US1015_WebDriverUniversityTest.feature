@@ -1,4 +1,4 @@
-
+@wip @p1
 Feature: US1015 WebDriverUniversityTest
 
   Scenario: TC20
@@ -13,7 +13,7 @@ Feature: US1015 WebDriverUniversityTest
       * Close the Popup by saying Ok
       Then Go back to the first page
       Then Test that user is in the first page
-      And closes the page
+
 
 
 

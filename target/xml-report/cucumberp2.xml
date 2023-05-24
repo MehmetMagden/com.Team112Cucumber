@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="148.882" tests="8" skipped="0" failures="1" errors="0">
+<testcase classname="US1009 To test more than one data, use Scenario Outline" name="TC14 amazon Search Test - Example #1.1" time="31.189">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then searches for "Apple" in amazon searchBox...............................passed
+And tests that result text contains "Apple" words...........................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1009 To test more than one data, use Scenario Outline" name="TC14 amazon Search Test - Example #1.2" time="20.519">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then searches for "Math" in amazon searchBox................................passed
+And tests that result text contains "Math" words............................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1009 To test more than one data, use Scenario Outline" name="TC14 amazon Search Test - Example #1.3" time="17.872">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then searches for "Samsung" in amazon searchBox.............................passed
+And tests that result text contains "Samsung" words.........................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1009 To test more than one data, use Scenario Outline" name="TC14 amazon Search Test - Example #1.4" time="18.404">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then searches for "Tv" in amazon searchBox..................................passed
+And tests that result text contains "Tv" words..............................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1009 To test more than one data, use Scenario Outline" name="TC14 amazon Search Test - Example #1.5" time="13.511">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then searches for "GPU" in amazon searchBox.................................passed
+And tests that result text contains "GPU" words.............................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1009 To test more than one data, use Scenario Outline" name="TC14 amazon Search Test - Example #1.6" time="17.119">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then searches for "Power Supply" in amazon searchBox........................passed
+And tests that result text contains "Power Supply" words....................passed
+Then closes the page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Website Wait Test" name="TC17 User should wait to see buttons" time="23.646">
+<system-out><![CDATA[
+Given user goes to "herOkuAppUrl" homepage..................................passed
+Then user clicks on addElement Button.......................................passed
+And user waits until delete button appears..................................passed
+Then tests that delete button is visible....................................passed
+And deletes delete button by clicking delete button.........................passed
+Then tests that delete button is not visible................................passed
+And closes the page.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1013 Take values from a column" name="TC19 user will take all values from guru99 website" time="5.892">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.GuruStepDefinitions.testThatListHasNameWithReusableMethod(GuruStepDefinitions.java:59)
+	at ✽.test that "Company" list has "NCC" name withReusableMethod(file:///C:/Users/Maden/IdeaProjects/com.Team112Cucumber/src/test/resources/features/US1014_testingGuruWebSiteWithReusableMethod.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user goes to "guruUrl" homepage.......................................passed
+And "Company" prints all values in its column...............................passed
+Then test that "Company" list has "NCC" name withReusableMethod.............failed
+Then closes the page........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

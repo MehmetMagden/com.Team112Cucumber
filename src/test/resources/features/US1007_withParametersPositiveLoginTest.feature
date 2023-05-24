@@ -1,3 +1,5 @@
+@wip
+
 Feature: US1007 PositiveLoginTest
 
   Scenario: TC10 Positive login test with valid username and valid password
@@ -8,7 +10,7 @@ Feature: US1007 PositiveLoginTest
     And user enters a password to passwordTextBox
     And user click on loginPage login button
     And test that user could be able to login
-    And closes the page
+
 
 
 
