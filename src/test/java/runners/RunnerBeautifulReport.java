@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         dryRun = false
 )
 
-public class Runner {
+public class RunnerBeautifulReport {
     /*
     In cucumber frame work, runner class will have nothing in it's body
     It is like an xml file in the TestNG FrameWork

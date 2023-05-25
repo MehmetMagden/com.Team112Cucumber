@@ -3,14 +3,34 @@ package stepdefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import pages.AutomationPage;
 import utilities.Driver;
 
-import javax.swing.*;
+public class HowToGeBeautifulReportAutomationStepDefinitions {
 
-public class AutomationStepDefinitions {
+    /*
+
+    To get beautiful report
+    first we neet to open pom.xml file
+
+    from plugins
+    we need to change 2 include tags for sure-fire and fail-safe plugins
+    we should enter unique name for our runner there
+    like
+    /*
+    <include>**///runners/*RunnerBR*.java</include>
+    /*
+    <include>**///runners/*RunnerBR*.java</include>
+
+
+    /*
+    we also need to change numbers of browsers depending  how many we want to open
+    <threadCount>1</threadCount>
+
+     */
 
     Faker faker = new Faker();
     AutomationPage automationPage = new AutomationPage();
@@ -36,7 +56,7 @@ public class AutomationStepDefinitions {
 
     @Given("clicks the SignUp button")
     public void clicks_the_sign_up_button() {
-        automationPage.homePageLoginSignUpButton.click();
+        automationPage.loginPageSignUpButton.click();
     }
 
     @Given("user enters personal and contact information")
@@ -44,6 +64,9 @@ public class AutomationStepDefinitions {
 
         automationPage.informationPageGenderRadioButton.click();
         password = faker.internet().password();
+        String lastname = faker.name().lastName();
+
+
         actions.sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)
                 .sendKeys(password)
@@ -57,7 +80,26 @@ public class AutomationStepDefinitions {
                 .sendKeys(Keys.SPACE)
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.SPACE)
-
+                .sendKeys(Keys.TAB)
+                .sendKeys(name)
+                .sendKeys(Keys.TAB)
+                .sendKeys(lastname)
+                .sendKeys(Keys.TAB)
+                .sendKeys(faker.company().name())
+                .sendKeys(Keys.TAB)
+                .sendKeys(faker.address().fullAddress())
+                .sendKeys(Keys.TAB)
+                .sendKeys(Keys.TAB)
+                .sendKeys("United State")
+                .sendKeys(Keys.TAB)
+                .sendKeys("Texas")
+                .sendKeys(Keys.TAB)
+                .sendKeys("Dallas")
+                .sendKeys(Keys.TAB)
+                .sendKeys("65468")
+                .sendKeys(Keys.TAB)
+                .sendKeys(faker.phoneNumber().cellPhone())
+                .perform();
 
 
     }
@@ -65,10 +107,17 @@ public class AutomationStepDefinitions {
     @Given("the user clicks the Create Account button")
     public void the_user_clicks_the_create_account_button() {
 
+        automationPage.informationPageCreateAccountButton.click();
+
+
     }
 
     @Then("verify account creation")
     public void verify_account_creation() {
 
+        Assert.assertTrue(automationPage.regesteredUserMessage.isDisplayed());
+
     }
+
+
 }

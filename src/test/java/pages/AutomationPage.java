@@ -29,6 +29,12 @@ public class AutomationPage {
     @FindBy(id = "id_gender1")
     public WebElement informationPageGenderRadioButton;
 
+    @FindBy(xpath = "//button[@data-qa='create-account']")
+    public WebElement informationPageCreateAccountButton;
+
+    @FindBy(xpath = "//*[text()='Account Created!']")
+    public WebElement regesteredUserMessage;
+
 
 
 

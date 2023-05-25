@@ -4,7 +4,9 @@ stepdefinitions\AmazonStepDefinitions.class
 pages\GuruPage.class
 pages\EditorPage.class
 pages\HerOkuPage.class
+runners\RunnerBR.class
 stepdefinitions\GuruStepDefinitions.class
+pages\AutomationPage.class
 utilities\ReusableMethods.class
 pages\WebDriverPage.class
 stepdefinitions\QdStepDefinitions.class
@@ -17,5 +19,6 @@ utilities\Driver.class
 pages\QdPage.class
 runners\ParalelRunner1.class
 runners\ParalelRunner2.class
+stepdefinitions\AutomationStepDefinitions.class
 utilities\ConfigReader.class
 stepdefinitions\HerOkuAppStepDefinitions.class

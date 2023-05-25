@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.762" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="US1016 Automation Practice Test" name="TC21 Register new user in automation Practice page" time="0.099">
-<failure/>
+<testsuite name="Cucumber" time="22.095" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1016 Automation Practice Test" name="TC21 Register new user in automation Practice page" time="21.772">
 <system-out><![CDATA[
 Given user goes to "automationUrl" homepage.................................passed
-And clicks the user sign in link............................................undefined
-And user enters email address and a name....................................skipped
-And clicks the SignUp button................................................skipped
-And user enters personal and contact information............................skipped
-And the user clicks the Create Account button...............................skipped
-Then verify account creation................................................skipped
+And clicks the user sign in link............................................passed
+And user enters email address and a name....................................passed
+And clicks the SignUp button................................................passed
+And user enters personal and contact information............................passed
+And the user clicks the Create Account button...............................passed
+Then verify account creation................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

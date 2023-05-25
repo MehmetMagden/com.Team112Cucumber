@@ -2,6 +2,8 @@ Feature: US1016 Automation Practice Test
   @wip
   Scenario: TC21 Register new user in automation Practice page
 
+
+
     Given user goes to "automationUrl" homepage
     And clicks the user sign in link
     And user enters email address and a name
