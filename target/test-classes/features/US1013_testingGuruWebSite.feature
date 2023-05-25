@@ -1,4 +1,4 @@
-@wip @p1
+ @p1
 Feature: US1013 Take values from a column
 
   Scenario: TC18 user will take all values from guru99 website

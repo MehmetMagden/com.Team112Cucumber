@@ -1,6 +1,6 @@
 Feature: US1010 Negative Login test with a few InvalidUserMail and InvalidUserPassword
 
-  @wip
+
   Scenario Outline: TC15 Try to login with a lot of invalid userMail and password
 
     Given user goes to "qdUrl" homepage

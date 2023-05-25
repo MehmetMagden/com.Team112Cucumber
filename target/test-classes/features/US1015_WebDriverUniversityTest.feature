@@ -1,4 +1,4 @@
-@wip @p1
+ @p1
 Feature: US1015 WebDriverUniversityTest
 
   Scenario: TC20
